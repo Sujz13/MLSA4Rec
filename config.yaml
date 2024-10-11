@@ -3,13 +3,13 @@ seed: 2024
 
 # mlsa4rec settings
 hidden_size: 64                 # (int) Number of features in the hidden state. 
-num_layers: 2                 # (int) Number of Mamba layers.
+num_layers: 2                 # (int) Number of Mamba normalization layers.
 dropout_prob: 0.1              # (float) Dropout rate.
 loss_type: 'CE'                 # (str) Type of loss function. Range in ['BPR', 'CE'].
 
-k_interests: 20                  # (int) number of interests of LMAS
-n_heads: 8                     # (int) number of heads of LMSA
-attn_dropout_prob: 0.1              # (float)dropout rate of LMSA
+k_interests: 20                  # (int) number of interests
+n_heads: 8                     # (int) number of heads
+attn_dropout_prob: 0.1              # (float)dropout rate of attention
 
 d_state: 32                     # (int) SSM state expansion factor
 d_conv: 4                       # (int) Local convolution width
